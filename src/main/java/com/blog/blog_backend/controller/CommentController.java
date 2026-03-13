@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/comments")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "${custom.cors.allowed-origins}")
 public class CommentController {
 
     @Autowired

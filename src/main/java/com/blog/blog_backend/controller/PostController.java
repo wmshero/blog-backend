@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/posts")
-@CrossOrigin(origins = "*") // 简单处理跨域，生产环境应严格限制
+@CrossOrigin(origins = "${custom.cors.allowed-origins}") // 动态读取配置的来源
 public class PostController {
 
     @Autowired

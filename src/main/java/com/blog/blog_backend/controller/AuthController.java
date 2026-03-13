@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "${custom.cors.allowed-origins}")
 public class AuthController {
 
     @Autowired
